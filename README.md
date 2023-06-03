@@ -1,1 +1,7 @@
-# tsuki
+# Tsuki Linux
+
+My Japanese is far from being proficient, but with a bit of research, and many years of going back and forth learning the language, I learned that Tsuki (月) is one of the most common ways to pronounce "Moon". This is intentionally meant to be the opposite of Asahi (Linux), which translates to "Rising Sun". Since this project is mainly focused on building a security-based flavor or "darker" flavor to better use this distribution for certain actions such as CTF competitions, a better method for using security-based tooling on M1 Macbooks "isolated" from the original partition, and just general workarounds to be able to use security tooling with Macbook hardware.
+
+I've been putting Linux on Macbooks (intel) since 2015, but since the release of the M1, things like Kali Linux and ParrotOS are not easily installable or require so many workarounds to get everything (that I need) functioning properly, so this is where Asahi Linux comes in. I want to build a sustainable flavor that allows the user to still have access to their MacBook's original infrastructure, but not need to install a bunch of security tools on a heavily monitored platform. Plus I've grown to really like Asahi Linux, so it all works out in the end.
+
+One final note, this project is mainly for my personal use, but if it does begin to gain traction and require some form of maintenance outside of my personal needs, I plan to keep it updated with the Asahi Linux development team's efforts, so feel free to open issues or report any bugs while using it. Thanks for checking it out and I hope it provides some use for you! :)
