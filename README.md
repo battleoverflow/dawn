@@ -4,8 +4,7 @@
 
    * [Installing Asahi Linux](#installing-asahi-linux)
    * [Installing Tsuki](#installing-tsuki)
-      * [Wiki](#wiki)
-   * [Why Tsuki?](#why-tsuki)
+   * [Final Notes](#final-notes)
    * [Trademark](#trademarks)
       * [Linux](#linux)
       * [Asahi Linux](#asahi-linux)
