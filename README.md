@@ -1,5 +1,7 @@
 # Tsuki
 
+Tsuki is a custom configuration for installing security packages and tools on Asahi Linux with minimal intrusion into the actual system. This was created out of a necessity to integrate more security options into Asahi Linux and ARM-based hardware. If this continues to grow, I may eventually switch from a single script to a full-blow documented "flavor", but for now, this should be able to install the most popular security options to Asahi Linux.
+
 ### ToC
 
    * [Installing Asahi Linux](#installing-asahi-linux)
