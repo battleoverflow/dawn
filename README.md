@@ -1,6 +1,6 @@
 # Tsuki
 
-Tsuki is a custom configuration for installing security packages and tools on Asahi Linux with minimal intrusion into the actual system. This was created out of a necessity to integrate more security options into Asahi Linux and ARM-based hardware. If this continues to grow, I may eventually switch from a single script to a full-blow documented "flavor", but for now, this should be able to install the most popular security options to Asahi Linux.
+Tsuki is a custom configuration for installing security packages and tools on Asahi Linux with minimal intrusion into the actual system. This was created out of a necessity to integrate more security options into Asahi Linux. All packages have been tested and should run without any issues. Obviously, this can change across configurations and infrastructure, so feel free to open an issue if you run into any issues.
 
 ### ToC
 
@@ -11,7 +11,7 @@ Tsuki is a custom configuration for installing security packages and tools on As
       * [Linux](#linux)
       * [Asahi Linux](#asahi-linux)
 
-NOTE: This script could technically be ran on almost any Arch-based distribution.
+NOTE: This script could technically be ran on almost any Arch-based distribution, but the configuration will only be tested and maintained for Asahi Linux (unless an issue is opened).
 
 ## Installing Asahi Linux
 
@@ -35,17 +35,23 @@ Second, read the script you're about to run to make sure you're comfortable with
 curl https://alx.sh > alx.sh
 ```
 
-For now, while the team is developing Asahi Linux, I have no intention of interfering or building anything within the core to make it easier to maintain this project. Once the first official release is out, I may go back and build some experimental ideas to see how well they work with everything, but for now, all you need to do is run a few commands to convert `Asahi -> Tsuki`. At the end of the day, it's just Asahi Linux with a focus on security.
+For now, while the team is developing Asahi Linux, I have no intention of interfering or building anything within the core to make it easier to maintain this project. Once the first official release is out, I may go back and build some experimental ideas to see how well they work with everything, but for now, all you need to do is run a single commands to add the Tsuki config to the Asahi Linux.
 
 ## Installing Tsuki
 
 This is the easiest method for running the most updated version of Tsuki. All you have to do is run the script on the Linux system.
 
+NOTE: Requires sudo to install packages.
+
 ```bash
 curl https://raw.githubusercontent.com/azazelm3dj3d/tsuki/master/tsuki.sh | sh
 ```
 
-This repository is a mirror for the full configuration, so you can just as easily install from the source if you want to clone the repository and run the script that way.
+As an alternative, you can clone the script and run it locally:
+
+```bash
+sudo ./tsuki.sh
+```
 
 NOTE: The `tsuki.sh` script is interactive and requires you to answer certain questions to make sure you're comfortable installing everything.
 
@@ -63,7 +69,7 @@ Linux is the registered trademark of Linus Torvalds.
 
 ### Asahi Linux
 
-If the Asahi Linux team would like this repository removed, I have no plans to oppose that and will respect their decision. Feel free to reach out to me if you have any issues.
+If the Asahi Linux development team have any issues with this projecct or questions, feel free to reach out!
 
 - Discord: azazelm3dj3d#9332
 - Email: info@azazelm3dj3d.com
