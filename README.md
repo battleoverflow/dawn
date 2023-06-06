@@ -44,7 +44,7 @@ This is the easiest method for running the most updated version of Dawn. All you
 NOTE: Requires sudo to install packages
 
 ```bash
-curl https://raw.githubusercontent.com/azazelm3dj3d/dawn/master/dawn.sh | sh
+curl https://raw.githubusercontent.com/azazelm3dj3d/dawn/main/dawn.sh | sh
 ```
 
 As an alternative, you can clone the script and run it locally:
