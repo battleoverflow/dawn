@@ -1,11 +1,16 @@
 #!/bin/bash
 
-# Tsuki is a free and open source script for adding security tools to Asahi Linux, a distribution created for silicon-based (M1) Macbook devices. Tsuki is focused on offering security packages and tools.
+################################################
+# Author: azazelm3dj3d                         #
+# GitHub: https://github.com/azazelm3dj3d/dawn #
+################################################
 
-NAME="Tsuki"
-VERSION="0.1.2"
+# Dawn is a free and open source script for adding security tools to Asahi Linux, a distribution created for silicon-based (M1) Macbook devices. Dawn is focused on offering security packages and tools.
+
+NAME="Dawn"
+VERSION="0.2.0"
 METADATA=$(echo "$NAME | $VERSION")
-LOG=/tmp/tsuki.log
+LOG=/tmp/dawn.log
 
 # Only errors will be logged. Normal messages will be printed to stdout.
 if [[ ! -f $LOG ]]
@@ -22,12 +27,18 @@ function install_basic_pkgs() {
     echo ""
 
     # You can remove/add packages as you see fit here. Just make sure they're available under pacman.
+    # You can also add custom arguments via arguments. Example: "./dawn.sh tool1 tool2 tool3 ..."
     # You can search available packages here: https://archlinux.org/packages/
-    packages=(
-        nmap
-        hashcat
-        hydra
-    )
+    if [[ $# -gt 0 ]]
+    then
+        packages=($@)
+    else
+        packages=(
+            nmap
+            hashcat
+            hydra
+        )
+    fi
 
     echo "The following packages will be installed:"
     echo ""
@@ -60,8 +71,8 @@ function install_basic_pkgs() {
 }
 
 function complete() {
-    echo "Thank you for installing the Tsuki configuration for Asahi Linux."
-    echo "A log file is available under '/tmp/tsuki.log' if you ran into any issues during the installation."
+    echo "Thank you for installing the Dawn configuration for Asahi Linux."
+    echo "A log file is available under '/tmp/dawn.log' if you ran into any issues during the installation."
 }
 
 install_basic_pkgs

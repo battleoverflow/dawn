@@ -1,21 +1,21 @@
-# Tsuki
+# Dawn
 
-Tsuki is a custom configuration for installing security packages and tools on Asahi Linux with minimal intrusion into the actual system. This was created out of a necessity to integrate more security options into Asahi Linux. All packages have been tested and should run without any issues. Obviously, this can change across configurations and infrastructure, so feel free to open an issue if you run into any issues.
+Dawn is a custom configuration for installing security packages and tools on Asahi Linux with minimal intrusion into the actual system. This was created out of a necessity to integrate more security options into Asahi Linux. All packages have been tested and should run without any issues. This can change across configurations and infrastructure, so feel free to open an issue if you run into any issues.
 
-### ToC
+## Table of Contents
 
    * [Installing Asahi Linux](#installing-asahi-linux)
-   * [Installing Tsuki](#installing-tsuki)
+   * [Installing Dawn](#installing-dawn)
    * [Final Notes](#final-notes)
    * [Trademark](#trademarks)
       * [Linux](#linux)
       * [Asahi Linux](#asahi-linux)
 
-NOTE: This script could technically be ran on almost any Arch-based distribution, but the configuration will only be tested and maintained for Asahi Linux (unless an issue is opened).
+NOTE: This script could technically be run on almost any Arch-based distribution, but the configuration will only be tested and maintained for Asahi Linux.
 
 ## Installing Asahi Linux
 
-First, make sure you have Asahi Linux installed and that everything is properly functioning.
+First, make sure you have Asahi Linux installed and that everything is properly working.
 
 You can do this by running their script in your MacBook terminal using the following command:
 
@@ -35,25 +35,33 @@ Second, read the script you're about to run to make sure you're comfortable with
 curl https://alx.sh > alx.sh
 ```
 
-For now, while the team is developing Asahi Linux, I have no intention of interfering or building anything within the core to make it easier to maintain this project. Once the first official release is out, I may go back and build some experimental ideas to see how well they work with everything, but for now, all you need to do is run a single commands to add the Tsuki config to the Asahi Linux.
+For now, while the team is developing Asahi Linux, I have no intention of interfering or building anything within the core to make it easier to maintain this project. Once the first official release is out, I may go back and build some experimental ideas to see how well they work with everything, but for now, all you need to do is run a single command to add the Dawn config to the Asahi Linux.
 
-## Installing Tsuki
+## Installing Dawn
 
-This is the easiest method for running the most updated version of Tsuki. All you have to do is run the script on the Linux system.
+This is the easiest method for running the most updated version of Dawn. All you have to do is run the script on the Linux system.
 
-NOTE: Requires sudo to install packages.
+NOTE: Requires sudo to install packages
 
 ```bash
-curl https://raw.githubusercontent.com/azazelm3dj3d/tsuki/master/tsuki.sh | sh
+curl https://raw.githubusercontent.com/azazelm3dj3d/dawn/master/dawn.sh | sh
 ```
 
 As an alternative, you can clone the script and run it locally:
 
 ```bash
-sudo ./tsuki.sh
+sudo ./dawn.sh
 ```
 
-NOTE: The `tsuki.sh` script is interactive and requires you to answer certain questions to make sure you're comfortable installing everything.
+NOTE: The `dawn.sh` script is interactive and requires you to answer certain questions to make sure you're comfortable installing everything.
+
+If you would like to include more tools, you can easily include new tools via arguments. Here's an example:
+
+```bash
+sudo ./dawn.sh tool1 tool2 tool3 ...
+```
+
+This will install all provided tools and skip our hard-coded tools. Leave it blank to install our default commands.
 
 ## Final Note(s)
 
@@ -69,7 +77,7 @@ Linux is the registered trademark of Linus Torvalds.
 
 ### Asahi Linux
 
-If the Asahi Linux development team have any issues with this projecct or questions, feel free to reach out!
+If the Asahi Linux development team has any issues with this project or questions, feel free to reach out!
 
 - Discord: azazelm3dj3d#9332
 - Email: info@azazelm3dj3d.com
