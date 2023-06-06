@@ -27,7 +27,7 @@ function install_basic_pkgs() {
     echo ""
 
     # You can remove/add packages as you see fit here. Just make sure they're available under pacman.
-    # You can also add custom arguments via arguments. Example: "./dawn.sh tool1 tool2 tool3 ..."
+    # You can also add packages using arguments. Example: "./dawn.sh tool1 tool2 tool3 ..."
     # You can search available packages here: https://archlinux.org/packages/
     if [[ $# -gt 0 ]]
     then
