@@ -1,9 +1,9 @@
 #!/bin/bash
 
-################################################
-# Author: azazelm3dj3d                         #
-# GitHub: https://github.com/azazelm3dj3d/dawn #
-################################################
+##################################################
+# Author: battleoverflow                         #
+# GitHub: https://github.com/battleoverflow/dawn #
+##################################################
 
 # Dawn is a free and open source script for adding security tools to Asahi Linux, a distribution created for silicon-based (M1) Macbook devices. Dawn is focused on offering security packages and tools.
 
